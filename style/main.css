@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document written by sayeed
+email: mm.sayeed@yahoo.com */
+
+*
+{
+margin:0px;
+padding:0px;
+}
+a{
+color:#006699;
+}
+a:hover
+{
+color:#006699;
+
+}
+body
+{
+font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+font-size:18px;
+}
+#main
+{
+margin:0px auto;
+max-width:400px;
+}
+#logo
+{
+text-align:center
+}
+#label
+{
+font-weight:bold
+}
+.input
+{
+width:100%; font-size:16px; border:solid 1px #006699; margin-bottom:10px;
+padding-top:6px;
+padding-bottom:6px;
+font-weight:bold;
+}
+.login
+{
+background-color:#cc0000;
+color:#FFFFFF;
+padding:4px;
+width:100%;
+height:50px;
+font-size:18px;
+}
+.clear{
+	height:1px;
+	background-color:#999;
+	margin-top:10px;
+	margin-bottom:10px;	}
+#footer{
+	height:15px;
+	background-color:#FFF;
+	font-size:10px;
+	float:left;
+	width:100%;
+	}
+	
+	
+/* Menu link*/
+#nav {
+margin: 0px;
+padding: 0px;
+list-style:none;
+display:block;
+
+}
+#nav li {
+margin: 0px;
+padding: 0px;
+display: block;
+background-color:#f2f2f2;
+height: auto;
+width: auto;
+}
+#nav li a:link, #nav li a:visited, #nav li a:active {
+text-decoration: none;
+color: #000;
+display: block;
+margin: 0px;
+line-height: 40px;
+text-align: center;
+border-radius:8px;
+-moz-border-radius:8px;
+-webkit-border-radius:8px;
+padding: 8px;
+background-color: #F93;
+margin-bottom:10px;
+}
+#nav li a:hover {
+text-decoration: none;
+background-color:#999999;
+color: #fff;
+}
