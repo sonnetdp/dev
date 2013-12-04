@@ -10,25 +10,19 @@
 //HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH Database Configuration HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
 
 
-	$db_name			= 'PMS';			//--------| DB Database Scheema User Name
-
-	$db_host			= '192.168.101.241';//--------| Insert IP or domain of Database Server
-
-	$db_service_name 	= 'pms';			//--------| Oracle SID 
+$db_name		= 'PMS';			//--------| DB Database Scheema User Name
+$db_host		= '192.168.101.241';//--------| Insert IP or domain of Database Server
+$db_service_name 	= 'pms';			//--------| Oracle SID 
 	
-
-
 
 //============================= Directory Name ==================================================================
 
-	$dirName 			= 'dev';			//--------| Directory Name. If in root then leave it blank.
-	
-	$sessionTime 		= 15;				//--------| Session Time in Minute
-
+$dirName 		= 'dev';			//--------| Directory Name. If in root then leave it blank.
+$sessionTime 		= 15;				//--------| Session Time in Minute
 
 
 //============================= Only for Debug use this Test Configuration =======================================
-$test_YesNo			= 'N';
+$test_YesNo		= 'N';
 $bill_pay_process 	= 'N';
 $bill_cat_101	 	= 'N';
 $pay_with_lpc 		= 'N';
@@ -53,13 +47,13 @@ define('IPAD',$base_path.'ipad/');
 define('DESK',$base_path.'pc/');
 
 if($dirName != '')
-	$dirName	=	$dirName.'/';
+	$dirName = $dirName.'/';
 
 $baseUrl 	= "http://" . $_SERVER['HTTP_HOST'] . '/'.$dirName;
 $baseUrlInc	= $baseUrl . 'include/';
 $baseUrlPc 	= $baseUrl . 'pc/';
-$baseUrlMob = $baseUrl . 'mobile/';
-$baseUrlPad = $baseUrl . 'ipad/';
+$baseUrlMob 	= $baseUrl . 'mobile/';
+$baseUrlPad 	= $baseUrl . 'ipad/';
 
 define('URL',$baseUrl);
 define('URLINC',$baseUrlInc);
@@ -70,13 +64,13 @@ define('URLPAD',$baseUrlPad);
 //============================ DB Name Define =====================================================
 define('DB_NAME',$dbName);
 
-$_SESSION['test_all'] 			= $test_YesNo;
+$_SESSION['test_all'] 		= $test_YesNo;
 $_SESSION['bill_pay_process'] 	= $bill_pay_process;
-$_SESSION['bill_cat_101'] 		= $bill_cat_101;
-$_SESSION['pay_with_lpc'] 		= $pay_with_lpc;
+$_SESSION['bill_cat_101'] 	= $bill_cat_101;
+$_SESSION['pay_with_lpc'] 	= $pay_with_lpc;
 $_SESSION['pay_without_lpc'] 	= $pay_without_lpc;
 $_SESSION['bill_pay_insert'] 	= $bill_pay_insert;
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-$_SESSION['time_limit'] 		= $sessionTime;
+$_SESSION['time_limit'] 	= $sessionTime;
 
 ?>
